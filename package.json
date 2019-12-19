@@ -12,7 +12,8 @@
     "vue"
   ],
   "bin": {
-    "electron": "bin/electron-cli"
+    "electron": "bin/electron-cli.js",
+    "init": "bin/electron-cli-init.js"
   },
   "author": {
     "name": "陈锋",
