@@ -6,21 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chenyuhu/electron-cli.git"
-  },
   "keywords": [
     "electron",
     "ts",
     "vue"
   ],
+  "bin": {
+    "electron": "bin/electron-cli"
+  },
   "author": {
     "name": "陈锋",
     "email": "chenyuhu428@gmail.com",
     "url": "https://chenyuhu.js.org"
   },
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenyuhu/electron-cli.git"
+  },
   "bugs": {
     "url": "https://github.com/chenyuhu/electron-cli/issues"
   },
@@ -31,5 +33,9 @@
     "download-git-repo": "^3.0.2",
     "inquirer": "^7.0.1",
     "ora": "^4.0.3"
-  }
+  },
+  "devDependencies": {
+    "@sishuguojixuefu/eslint-config": "^0.5.3"
+  },
+  "license": "ISC"
 }
