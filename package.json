@@ -1,0 +1,35 @@
+{
+  "name": "electron-cli",
+  "version": "0.0.1",
+  "description": "基于vue-cli3.x 搭建electron项目的脚手架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenyuhu/electron-cli.git"
+  },
+  "keywords": [
+    "electron",
+    "ts",
+    "vue"
+  ],
+  "author": {
+    "name": "陈锋",
+    "email": "chenyuhu428@gmail.com",
+    "url": "https://chenyuhu.js.org"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenyuhu/electron-cli/issues"
+  },
+  "homepage": "https://github.com/chenyuhu/electron-cli#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.0.1",
+    "ora": "^4.0.3"
+  }
+}
