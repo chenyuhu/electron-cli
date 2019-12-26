@@ -32,11 +32,17 @@
     "chalk": "^3.0.0",
     "commander": "^4.0.1",
     "download-git-repo": "^3.0.2",
+    "handlebars": "^4.5.3",
     "inquirer": "^7.0.1",
-    "ora": "^4.0.3"
+    "ncp": "^2.0.0",
+    "ora": "^4.0.3",
+    "recursive-readdir": "^2.2.2",
+    "exec-sh": "^0.3.4",
+    "global-prefix": "^3.0.0",
+    "shelljs": "^0.8.3"
   },
   "devDependencies": {
-    "@sishuguojixuefu/eslint-config": "^0.5.3"
+    "@sishuguojixuefu/eslint-config": "^0.5.3",
   },
   "license": "ISC"
 }

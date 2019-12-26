@@ -1,43 +1,80 @@
-module.exports = [
+const chalk = require('chalk')
+
+const error = chalk.red
+const Component = [
   {
-    name: 'name',
-    type: 'input',
-    message: 'Please enter a project name',
-    default: 'electronVueTemplate',
-    validate: (val) => {
-      if (!val) {
-        return 'Project name is required'
-      }
-      return true
-    },
+    type: 'scope',
+    message: '请输入Npm Scope',
+    name: 'scope',
+    default: 'sishu',
   },
   {
+    type: 'version',
+    message: '初始版本',
     name: 'version',
-    type: 'input',
-    message: 'Please enter the version',
-    default: '0.0.1',
-    validate: (version) => {
-      const rex = /^\d+.\d+.\d+(\w+)?$/
-      if (!rex.test(version)) {
-        return 'Incorrect version format'
+    default: '0.0.0',
+  },
+  {
+    type: 'description',
+    message: '请输入组件描述',
+    name: 'description',
+  },
+  {
+    type: 'author',
+    message: '请输入作者姓名',
+    name: 'author',
+    validate: (input) => {
+      if (/[/\\]/im.test(input)) {
+        console.log(` ${error('姓名不能包含特殊字符')}`)
+        return false
       }
       return true
     },
   },
   {
-    name: 'author',
-    type: 'input',
-    message: 'Please enter author',
+    type: 'url',
+    message: '请输入作者博客链接',
+    name: 'url',
   },
   {
-    name: 'description',
-    type: 'input',
-    message: 'What is your description',
-  },
-  {
-    name: 'license',
-    type: 'list',
-    message: 'please choose license',
-    choices: ['MIT', 'ISC', 'null'],
+    type: 'email',
+    message: '请输入作者邮箱',
+    name: 'email',
   },
 ]
+const Business = [
+  {
+    type: 'version',
+    message: '初始版本',
+    name: 'version',
+    default: '0.0.0',
+  },
+  {
+    type: 'description',
+    message: '请输入项目描述',
+    name: 'description',
+  },
+  {
+    type: 'author',
+    message: '请输入作者姓名',
+    name: 'author',
+    validate: (input) => {
+      if (/[/\\]/im.test(input)) {
+        console.log(` ${error('姓名不能包含特殊字符')}`)
+        return false
+      }
+      return true
+    },
+  },
+  {
+    type: 'url',
+    message: '请输入作者博客链接',
+    name: 'url',
+  },
+  {
+    type: 'email',
+    message: '请输入作者邮箱',
+    name: 'email',
+  },
+]
+module.exports = { Component, Business }
