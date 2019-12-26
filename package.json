@@ -42,7 +42,7 @@
     "shelljs": "^0.8.3"
   },
   "devDependencies": {
-    "@sishuguojixuefu/eslint-config": "^0.5.3",
+    "@sishuguojixuefu/eslint-config": "^0.5.3"
   },
   "license": "ISC"
 }
