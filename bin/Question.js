@@ -40,22 +40,4 @@ module.exports = [
     message: 'please choose license',
     choices: ['MIT', 'ISC', 'null'],
   },
-  {
-    name: 'jsType',
-    type: 'list',
-    message: 'Use javascript or typescript',
-    choices: ['javascript', 'typescript'],
-  },
-  {
-    name: 'useRouter',
-    type: 'confirm',
-    message: 'Whether to use vue router',
-    default: true,
-  },
-  {
-    name: 'useVuex',
-    type: 'confirm',
-    message: 'Whether to use vuex',
-    default: true,
-  },
 ]
